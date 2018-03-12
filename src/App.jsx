@@ -13,9 +13,10 @@ const App = () => (
     </Navbar>
 
     <div className="mdc-layout-grid">
-      <h2 className="mdc-typography--title">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </h2>
+      <button className="mdc-button">
+        <i className="material-icons mdc-button__icon">favorite</i>
+        Escuchar micrófono
+      </button>
     </div>
   </div>
 );
