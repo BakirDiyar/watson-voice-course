@@ -19,6 +19,7 @@ const express = require('express');
 const app = express();
 const watson = require('watson-developer-cloud');
 const vcapServices = require('vcap_services');
+const cors = require('cors');
 
 // allows environment properties to be set in a file named .env
 require('dotenv').load({ silent: true });
@@ -44,6 +45,8 @@ if (process.env.VCAP_SERVICES) {
   app.use(secure());
 }
 
+// Middlewares
+app.use(cors());
 app.use(express.static(__dirname + '/static'));
 
 // token endpoints
