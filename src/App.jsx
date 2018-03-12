@@ -4,25 +4,13 @@ import React from 'react';
  * https://material.io/components/web/ */
 import 'material-components-web/dist/material-components-web.css';
 
-/* UI Components */
-import {
-  Toolbar,
-  ToolbarRow,
-  ToolbarSection,
-  ToolbarTitle,
-} from './ui';
+import Navbar from './Navbar';
 
 const App = () => (
   <div>
-    <Toolbar>
-      <ToolbarRow>
-        <ToolbarSection>
-          <ToolbarTitle>
-            Welcome to React
-          </ToolbarTitle>
-        </ToolbarSection>
-      </ToolbarRow>
-    </Toolbar>
+    <Navbar>
+      Watson Voice Recognition
+    </Navbar>
 
     <div className="mdc-layout-grid">
       <h2 className="mdc-typography--title">
