@@ -4,9 +4,6 @@ import React from 'react';
  * https://material.io/components/web/ */
 import 'material-components-web/dist/material-components-web.css';
 
-/* Default App styles and images */
-import './App.css';
-
 const App = () => (
   <div>
     <header className="mdc-toolbar">
