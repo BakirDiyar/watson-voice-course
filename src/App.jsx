@@ -4,15 +4,25 @@ import React from 'react';
  * https://material.io/components/web/ */
 import 'material-components-web/dist/material-components-web.css';
 
+/* UI Components */
+import {
+  Toolbar,
+  ToolbarRow,
+  ToolbarSection,
+  ToolbarTitle,
+} from './ui';
+
 const App = () => (
   <div>
-    <header className="mdc-toolbar">
-      <div className="mdc-toolbar__row">
-        <section className="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <span className="mdc-toolbar__title">Welcome to React</span>
-        </section>
-      </div>
-    </header>
+    <Toolbar>
+      <ToolbarRow>
+        <ToolbarSection>
+          <ToolbarTitle>
+            Welcome to React
+          </ToolbarTitle>
+        </ToolbarSection>
+      </ToolbarRow>
+    </Toolbar>
 
     <div className="mdc-layout-grid">
       <h2 className="mdc-typography--title">
